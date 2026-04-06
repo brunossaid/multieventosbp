@@ -1,16 +1,68 @@
-# React + Vite
+# 🎉 Multieventos Barrio Parque Calchaqui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema web para consulta y pre-reserva de un salón de eventos mediante selección de fecha, horario y cantidad de personas, con integración directa a WhatsApp para finalizar la solicitud.
 
-Currently, two official plugins are available:
+La aplicación fue desarrollada para uso real, siendo utilizada por los responsables del salón para agilizar y organizar las consultas de clientes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El proyecto incluye Frontend Web + lógica de negocio en cliente + integración con servicios externos.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📄 Descripción
 
-## Expanding the ESLint configuration
+Se desarrolló una interfaz web que permite a los usuarios:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Seleccionar una fecha disponible (desde el día actual en adelante)
+- Visualizar horarios disponibles según el día elegido
+- Elegir la cantidad de personas para el evento
+- Generar automáticamente un mensaje estructurado
+- Redirigir la consulta a WhatsApp
+
+La aplicación permite manejar múltiples contactos, generando enlaces hacia distintos números de WhatsApp según corresponda, facilitando la gestión entre diferentes responsables del salón.
+
+La aplicación es **100% responsive** y pero esta optimizada para uso en dispositivos móviles.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+### Frontend
+
+- **React (Vite)**
+- **Material UI (MUI)**
+- **JavaScript**
+
+### Integraciones
+
+- **WhatsApp API (wa.me)** para generación de consultas automáticas
+
+El código sigue buenas prácticas de organización, separando componentes, constantes y lógica, facilitando la escalabilidad y mantenimiento.
+
+---
+
+## 📷 Preview
+
+![Home](./src/assets/readme-preview.png)
+
+---
+
+## ⚙️ Funcionamiento
+
+El usuario completa:
+
+- 📅 Fecha
+- 🕒 Horario
+- 👥 Cantidad de personas
+
+Y la aplicación genera automáticamente un mensaje como:
+
+```text
+Hola! Quisiera consultar por el salón Multieventos BP.
+- Fecha: Sábado 12/04/2026
+- Horario: 16:00 - 20:00
+- Cantidad: Hasta 50 personas
+```
+
+## 🌐 Deploy
+
+https://multieventosbp.vercel.app/
