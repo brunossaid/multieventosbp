@@ -26,7 +26,7 @@ export function buildWhatsAppLink({
   const path = window.location.pathname.toLowerCase();
 
   const phoneMap = {
-    '/a': '5491163045437', // ana (bruno)
+    '/a': '5491164200805', // ana
     '/c': '5491158172054', // ceci
   };
 
