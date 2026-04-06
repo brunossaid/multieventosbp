@@ -8,6 +8,7 @@ import {
   Typography,
 } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import dayjs from 'dayjs';
 import ImageCarousel from '../../components/ImageCarousel';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InputLabel from '@mui/material/InputLabel';
@@ -78,6 +79,8 @@ export default function HomePage() {
             setSelectedDate(newValue);
             setSelectedSchedule('');
           }}
+          disablePast
+          maxDate={dayjs('2027-12-31')}
           slotProps={{
             textField: {
               variant: 'outlined',
