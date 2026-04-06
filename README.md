@@ -20,7 +20,7 @@ Se desarrolló una interfaz web que permite a los usuarios:
 
 La aplicación permite manejar múltiples contactos, generando enlaces hacia distintos números de WhatsApp según corresponda, facilitando la gestión entre diferentes responsables del salón.
 
-La aplicación es **100% responsive** y pero esta optimizada para uso en dispositivos móviles.
+La aplicación es **100% responsive**, pero esta optimizada para uso en dispositivos móviles.
 
 ---
 
