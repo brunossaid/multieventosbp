@@ -23,9 +23,14 @@ export function buildWhatsAppLink({
 - Horario: ${schedule.label}
 - Cantidad: ${formattedGuests}`;
 
-  const phone = '5491163045437';
+  const path = window.location.pathname.toLowerCase();
 
-  // console.log('message', message);
+  const phoneMap = {
+    '/a': '5491163045437', // ana (bruno)
+    '/c': '5491158172054', // ceci
+  };
+
+  const phone = phoneMap[path] || phoneMap['/c'];
 
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
