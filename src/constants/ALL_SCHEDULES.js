@@ -1,0 +1,51 @@
+export const ALL_SCHEDULES = [
+  {
+    id: 'flex-4h',
+    label: 'Flexible 4h',
+    shortDay: 'Lun – Jue',
+    description: 'Hasta 00:00',
+    validDays: [1, 2, 3, 4],
+  },
+  {
+    id: 'fri-afternoon',
+    label: 'Turno tarde',
+    shortDay: 'Viernes',
+    description: '12:00 – 16:00 // 13:00 – 17:00',
+    validDays: [5],
+  },
+  {
+    id: 'fri-night',
+    label: 'Turno noche',
+    shortDay: 'Viernes',
+    description: '20:00 – 02:00',
+    validDays: [5],
+  },
+  {
+    id: 'sat-afternoon',
+    label: 'Turno tarde',
+    shortDay: 'Sábado',
+    description: '12:00 – 16:00 // 13:00 – 17:00',
+    validDays: [6],
+  },
+  {
+    id: 'sat-night',
+    label: 'Turno noche',
+    shortDay: 'Sábado',
+    description: '21:00 – 04:00',
+    validDays: [6],
+  },
+  {
+    id: 'sun-afternoon',
+    label: 'Turno tarde',
+    shortDay: 'Domingo',
+    description: '12:00 – 16:00',
+    validDays: [0],
+  },
+  {
+    id: 'sun-night',
+    label: 'Turno noche',
+    shortDay: 'Domingo',
+    description: '20:00 – 00:00',
+    validDays: [0],
+  },
+];
